@@ -40,6 +40,7 @@ class _BottombarState extends State<Bottombar> {
 
     assert(_kTabPages.length == _kTab.length);
     final bottomNavBar = BottomNavigationBar(
+      selectedItemColor: Colors.redAccent[200],
       items: _kTab,
       currentIndex: _currentTabIndex,
       type: BottomNavigationBarType.fixed,
@@ -50,6 +51,8 @@ class _BottombarState extends State<Bottombar> {
       },
     );
     return Scaffold(
-        body: _kTabPages[_currentTabIndex], bottomNavigationBar: bottomNavBar);
+      body: _kTabPages[_currentTabIndex],
+      bottomNavigationBar: bottomNavBar,
+    );
   }
 }

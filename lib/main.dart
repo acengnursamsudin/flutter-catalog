@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:myapp/app_theme.dart';
 import 'package:myapp/navigation/bottombar.dart';
-import 'package:myapp/pages/page_one.dart';
 
 void main() => runApp(MyApp());
 
@@ -11,6 +11,8 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       theme: ThemeData(
         primarySwatch: Colors.blue,
+        textTheme: AppTheme.textTheme,
+        primaryColor: Colors.white,
       ),
       home: Bottombar(),
     );

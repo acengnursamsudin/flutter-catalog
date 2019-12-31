@@ -1,0 +1,1 @@
+{"isEntrypoint":true,"deps":["myapp|lib/shimmer/article_list.dart","myapp|lib/shimmer/product_list.dart","myapp|lib/shimmer/product_details.dart"],"parts":[],"conditionalDeps":[],"sdkDeps":[],"hasMain":false}

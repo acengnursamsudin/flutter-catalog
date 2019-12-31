@@ -1,0 +1,1 @@
+{"isEntrypoint":true,"deps":["flutter|lib/material.dart","myapp|lib/pages/page_three.dart","myapp|lib/shimmer/shimmer.dart"],"parts":[],"conditionalDeps":[],"sdkDeps":[],"hasMain":false}

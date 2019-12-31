@@ -1,0 +1,1 @@
+{"isEntrypoint":true,"deps":["flutter|lib/material.dart","myapp|lib/app_theme.dart","myapp|lib/navigation/bottombar.dart"],"parts":[],"conditionalDeps":[],"sdkDeps":[],"hasMain":true}

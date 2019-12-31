@@ -1,0 +1,1 @@
+{"isEntrypoint":true,"deps":["flutter|lib/cupertino.dart","flutter|lib/material.dart","myapp|lib/common/slidding_cards_view.dart","myapp|lib/pages/page_two.dart","myapp|lib/shimmer/shimmer.dart"],"parts":[],"conditionalDeps":[],"sdkDeps":[],"hasMain":false}
