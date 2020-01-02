@@ -16,10 +16,16 @@ class PageOne extends StatelessWidget {
       body: Container(
         width: double.infinity,
         child: ListView(
-          padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 16.0),
           children: <Widget>[
-            SlidingCardsView(),
-            ShimerArticleList(),
+            Padding(
+              padding: EdgeInsets.only(top: 32.0),
+              child: SlidingCardsView(),
+            ),
+            Padding(
+              padding:
+                  const EdgeInsets.symmetric(horizontal: 16.0, vertical: 16.0),
+              child: ShimerArticleList(),
+            ),
             Padding(padding: EdgeInsets.symmetric(vertical: 8.0)),
             FlatButton(
               child: Text('Go to page two'),

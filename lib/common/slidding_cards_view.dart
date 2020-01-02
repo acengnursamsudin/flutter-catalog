@@ -12,18 +12,31 @@ class _SlidingCardsViewState extends State<SlidingCardsView> {
   PageController pageController;
 
   @override
+  void initState() {
+    super.initState();
+    pageController = PageController(viewportFraction: 0.8);
+  }
+
+  @override
+  void dispose() {
+    pageController.dispose();
+    super.dispose();
+  }
+
+  @override
   Widget build(BuildContext context) {
     return SizedBox(
       height: MediaQuery.of(context).size.height * 0.55,
       child: PageView(
+        controller: pageController,
         children: <Widget>[
           SlidingCard(
-            assetName: 'sample.jgp',
+            assetName: 'tshirt.jpeg',
             name: 'Name Card',
             date: '4.20-30',
           ),
           SlidingCard(
-            assetName: 'sample.jgp',
+            assetName: 'tshirt.jpeg',
             name: 'Name Card',
             date: '4.20-30',
           )
@@ -48,7 +61,7 @@ class SlidingCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
-      margin: EdgeInsets.only(left: 8.0, right: 8.0, bottom: 24.0),
+      margin: EdgeInsets.only(left: 8.0, right: 8.0, bottom: 24.0, top: 2.0),
       elevation: 4,
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(32)),
       child: Column(
@@ -57,8 +70,7 @@ class SlidingCard extends StatelessWidget {
             borderRadius: BorderRadius.vertical(top: Radius.circular(32)),
             child: Image.asset(
               'assets/images/$assetName',
-              height: MediaQuery.of(context).size.height * 0.3,
-              fit: BoxFit.none,
+              fit: BoxFit.cover,
             ),
           ),
           SizedBox(
